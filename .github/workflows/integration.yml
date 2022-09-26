@@ -1,13 +1,13 @@
-name: Integration
+name: Integration         # Name of the task need to be done
 
-on:
-  push:
+on:                       # Actions when it needs to be taken 
+  push:                   # Ex. When someone pushes to main branch
     branches: [main]
-  pull_request:
+  pull_request:           # Ex. When someone takes pull request from main branch
     branches: [main]
 
-jobs:
-  build:
+jobs:                         # What will happen in the response of above actions 
+  build:              
     runs-on: ubuntu-latest
 
     strategy:
